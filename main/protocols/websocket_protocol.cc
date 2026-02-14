@@ -82,7 +82,11 @@ void WebsocketProtocol::CloseAudioChannel(bool send_goodbye) {
 
 bool WebsocketProtocol::OpenAudioChannel() {
     Settings settings("websocket", false);
+    // 硬编码服务器地址 - 指向用户的服务器
     std::string url = settings.GetString("url");
+    if (url.empty()) {
+        url = "ws://23.94.226.119:8080/xiaozhi/v1/";
+    }
     std::string token = settings.GetString("token");
     int version = settings.GetInt("version");
     if (version != 0) {

@@ -16,7 +16,7 @@ As a voice interaction entry, the XiaoZhi AI chatbot leverages the AI capabiliti
 
 The current v2 version is incompatible with the v1 partition table, so it is not possible to upgrade from v1 to v2 via OTA. For partition table details, see [partitions/v2/README.md](partitions/v2/README.md).
 
-All hardware running v1 can be upgraded to v2 by manually flashing the firmware.
+All hardware running v1 can be upgraded to v2 by manually flashing the firmware .
 
 The stable version of v1 is 1.9.2. You can switch to v1 by running `git checkout v1`. The v1 branch will be maintained until February 2026.
 
